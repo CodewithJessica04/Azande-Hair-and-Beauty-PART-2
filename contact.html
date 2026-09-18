@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Us | Azande Hair & Beauty</title>
+    <meta name="description" content="Contact Azande Hair & Beauty. Call, WhatsApp, email, or visit us at our Sandton studio." />
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-logo">
+                <img src="images/logo.jpg" alt="Azande Hair & Beauty Logo" />
+                <div>
+                    <span class="nav-logo-text">Azande</span>
+                    <span class="nav-logo-sub">Hair & Beauty</span>
+                </div>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="hairstyles.html">Hairstyles</a></li>
+                <li><a href="book-appointment.html">Book Appointment</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+                <li><a href="rules.html">Rules</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>
+            </ul>
+            <div class="nav-actions">
+                <a href="book-appointment.html" class="btn-gold">
+                    <span class="material-icons">event_available</span> Book
+                </a>
+                <button class="mobile-toggle" aria-label="Toggle navigation">
+                    <span class="material-icons">menu</span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <section class="contact-page">
+        <div class="container">
+            <div class="section-title">
+                <h2>Contact <span class="gold-text">Us</span></h2>
+                <div class="line"></div>
+                <p>Reach out to book, ask questions, or connect with Azande.</p>
+            </div>
+
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <div class="contact-card">
+                        <div class="icon"><span class="material-icons">phone</span></div>
+                        <div>
+                            <h4>Call or WhatsApp</h4>
+                            <p><a href="tel:0614964840">061 496 4840</a></p>
+                            <a href="tel:0614964840">Tap to call</a>
+                        </div>
+                    </div>
+
+                    <div class="contact-card">
+                        <div class="icon"><span class="material-icons">email</span></div>
+                        <div>
+                            <h4>Email</h4>
+                            <p><a href="mailto:azande@hairbeauty.co.za">azande@hairbeauty.co.za</a></p>
+                            <a href="mailto:azande@hairbeauty.co.za">Send email</a>
+                        </div>
+                    </div>
+
+                    <div class="contact-card">
+                        <div class="icon"><span class="material-icons">location_on</span></div>
+                        <div>
+                            <h4>Sandton Studio</h4>
+                            <p>2 Sandown Valley Crescent, Sandton</p>
+                            <p style="font-size: 12px; color: #999; margin-top: 2px;">Mon-Fri: Walk-in | Sat-Sun: Appointment only</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-card">
+                        <div class="icon"><span class="material-icons">home</span></div>
+                        <div>
+                            <h4>House Calls</h4>
+                            <p>Durban, Berea area only. Transport fee applies.</p>
+                            <p style="font-size: 12px; color: #999; margin-top: 2px;">No taxis inside Durban</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact-form-card">
+                    <h2>Send a <span class="gold-text">Message</span></h2>
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <label for="contactName">Your Name <span class="gold-text">*</span></label>
+                            <input type="text" id="contactName" required placeholder="Azande Madlala" />
+                        </div>
+                        <div class="form-group">
+                            <label for="contactEmail">Your Email <span class="gold-text">*</span></label>
+                            <input type="email" id="contactEmail" required placeholder="you@example.com" />
+                        </div>
+                        <div class="form-group">
+                            <label for="contactPhone">Phone Number</label>
+                            <input type="tel" id="contactPhone" placeholder="061 496 4840" />
+                        </div>
+                        <div class="form-group">
+                            <label for="contactMessage">Your Message <span class="gold-text">*</span></label>
+                            <textarea id="contactMessage" rows="4" required placeholder="I would like to book..."></textarea>
+                        </div>
+                        <button type="submit" class="btn-gold" style="width: 100%; justify-content: center;">
+                            <span class="material-icons">send</span> Send Message
+                        </button>
+                    </form>
+                    <p style="font-size: 12px; color: #999; text-align: center; margin-top: 12px;">Or message directly on <a href="https://wa.me/27614964840" style="color: #d4af37; font-weight: 500;">WhatsApp</a></p>
+                </div>
+            </div>
+
+            <!-- Map -->
+            <div class="contact-map">
+                <h3 style="font-size: 20px; font-weight: 700; margin-bottom: 16px;">Find Us</h3>
+                <div class="map-placeholder">
+                    <span class="material-icons">map</span>
+                    <p style="margin-top: 8px;">2 Sandown Valley Crescent, Sandton</p>
+                    <p style="font-size: 13px; color: #aaa;">Google Maps coming soon</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <span class="brand">Azande</span>
+                    <span class="sub">Hair &amp; Beauty</span>
+                    <p>Premium braiding studio in Sandton.</p>
+                </div>
+                <div>
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="hairstyles.html">Hairstyles</a></li>
+                        <li><a href="book-appointment.html">Book Appointment</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4>Support</h4>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="faq.html">FAQ</a></li>
+                        <li><a href="rules.html">Rules</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4>Contact</h4>
+                    <ul class="footer-contact">
+                        <li><span class="material-icons">phone</span> <a href="tel:0614964840">061 496 4840</a></li>
+                        <li><span class="material-icons">email</span> <a href="mailto:azande@hairbeauty.co.za">azande@hairbeauty.co.za</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Azande Hair &amp; Beauty — Partnered with Darling.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

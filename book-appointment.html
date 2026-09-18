@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Book Appointment | Azande Hair & Beauty</title>
+    <meta name="description" content="Book your braiding appointment with Azande. Choose your style, date, and time." />
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-logo">
+                <img src="images/logo.jpg" alt="Azande Hair & Beauty Logo" />
+                <div>
+                    <span class="nav-logo-text">Azande</span>
+                    <span class="nav-logo-sub">Hair & Beauty</span>
+                </div>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="hairstyles.html">Hairstyles</a></li>
+                <li><a href="book-appointment.html" class="active">Book Appointment</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+                <li><a href="rules.html">Rules</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="nav-actions">
+                <a href="book-appointment.html" class="btn-gold">
+                    <span class="material-icons">event_available</span> Book
+                </a>
+                <button class="mobile-toggle" aria-label="Toggle navigation">
+                    <span class="material-icons">menu</span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <section class="booking-page">
+        <div class="container">
+            <div class="section-title">
+                <h2>Book an <span class="gold-text">Appointment</span></h2>
+                <div class="line"></div>
+                <p>Fill out the form below and send your booking request via WhatsApp.</p>
+            </div>
+
+            <div class="booking-card">
+                <p class="info-text">Please provide your details below, then click the WhatsApp button to send your booking request directly to Azande.</p>
+
+                <form id="bookingForm">
+                    <div class="form-group">
+                        <label for="fullName">Full Name <span class="gold-text">*</span></label>
+                        <input type="text" id="fullName" required placeholder="Enter your full name" />
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Phone Number <span class="gold-text">*</span></label>
+                        <input type="tel" id="phone" required placeholder="061 496 4840" />
+                    </div>
+                    <div class="form-group">
+                        <label for="hairstyle">Select Hairstyle <span class="gold-text">*</span></label>
+                        <select id="hairstyle" required>
+                            <option value="">Select a style</option>
+                            <option value="Lemonade Braids">Lemonade Braids - R750</option>
+                            <option value="Small Straight Up">Small Straight Up - R750</option>
+                            <option value="Short Curled Braids">Short Curled Braids - R600</option>
+                            <option value="Straight Up Large">Straight Up Large - R400</option>
+                            <option value="Afro Pondo">Afro Pondo - R550</option>
+                            <option value="Cornrows">Cornrows - R500</option>
+                            <option value="Men's Cornrows">Men's Cornrows - R450</option>
+                            <option value="Straight Back Braids">Straight Back Braids - R500</option>
+                            <option value="Design Braids">Design Braids - R650</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="preferredDate">Preferred Date <span class="gold-text">*</span></label>
+                        <input type="date" id="preferredDate" required />
+                    </div>
+                    <div class="form-group">
+                        <label for="preferredTime">Preferred Time <span class="gold-text">*</span></label>
+                        <select id="preferredTime" required>
+                            <option value="">Select time</option>
+                            <option value="09:00">09:00 AM</option>
+                            <option value="10:00">10:00 AM</option>
+                            <option value="11:00">11:00 AM</option>
+                            <option value="12:00">12:00 PM</option>
+                            <option value="13:00">01:00 PM</option>
+                            <option value="14:00">02:00 PM</option>
+                            <option value="15:00">03:00 PM</option>
+                            <option value="16:00">04:00 PM</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="serviceType">Service Type <span class="gold-text">*</span></label>
+                        <select id="serviceType" required>
+                            <option value="Salon">Sandton Studio (Walk-in available Mon-Fri)</option>
+                            <option value="House Call">House Call (Durban/Berea - transport fee applies)</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="hairpieceNeeded">Hairpiece Needed?</label>
+                        <select id="hairpieceNeeded">
+                            <option value="No">No, I will bring my own</option>
+                            <option value="Yes">Yes, please purchase for me</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="notes">Additional Notes</label>
+                        <textarea id="notes" rows="3" placeholder="Any special requests or inspiration photos?"></textarea>
+                    </div>
+
+                    <button type="submit" class="whatsapp-btn">
+                        <span class="material-icons">chat</span> Send Request via WhatsApp
+                    </button>
+                </form>
+
+                <div style="margin-top: 24px; font-size: 13px; color: #888; text-align: center;">
+                    <p>By submitting, you agree to our <a href="rules.html" style="color: #d4af37; font-weight: 500;">cancellation policy</a>. Please wash and blow-dry your hair before arrival.</p>
+                </div>
+            </div>
+
+            <div style="margin-top: 48px;">
+                <div class="booking-info">
+                    <div class="item">
+                        <span class="material-icons">schedule</span>
+                        <h4>Working Hours</h4>
+                        <p>Mon-Fri: Walk-in<br />Sat-Sun: Appointment only</p>
+                    </div>
+                    <div class="item">
+                        <span class="material-icons">location_on</span>
+                        <h4>Location</h4>
+                        <p>2 Sandown Valley Crescent<br />Sandton</p>
+                    </div>
+                    <div class="item">
+                        <span class="material-icons">phone</span>
+                        <h4>Call Us</h4>
+                        <p><a href="tel:0614964840" style="color: #d4af37; font-weight: 500;">061 496 4840</a></p>
+                    </div>
+                    <div class="item">
+                        <span class="material-icons">chat</span>
+                        <h4>WhatsApp</h4>
+                        <p><a href="https://wa.me/27614964840" target="_blank" style="color: #d4af37; font-weight: 500;">Message us directly</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <span class="brand">Azande</span>
+                    <span class="sub">Hair &amp; Beauty</span>
+                    <p>Premium braiding studio in Sandton.</p>
+                </div>
+                <div>
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="hairstyles.html">Hairstyles</a></li>
+                        <li><a href="rules.html">Rules</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4>Support</h4>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="faq.html">FAQ</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4>Contact</h4>
+                    <ul class="footer-contact">
+                        <li><span class="material-icons">phone</span> <a href="tel:0614964840">061 496 4840</a></li>
+                        <li><span class="material-icons">email</span> <a href="mailto:azande@hairbeauty.co.za">azande@hairbeauty.co.za</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Azande Hair &amp; Beauty — Partnered with Darling.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
